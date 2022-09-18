@@ -2,7 +2,6 @@ import colors from 'vuetify/es5/util/colors'
 import path from 'path'
 import fs from 'fs'
 import VuetifyLoaderPlugin from 'vuetify-loader/lib/plugin'
-import { server } from 'process'
 
 // Build assets on the fly in development mode
 const server = {}
@@ -57,7 +56,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     // https://go.nuxtjs.dev/vuetify
-    '@nuxtjs/vuetify',
+    '@nuxtjs/vuetify'
 
   ],
 
