@@ -56,10 +56,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     // https://go.nuxtjs.dev/vuetify
-<<<<<<< HEAD
     '@nuxtjs/vuetify'
-=======
->>>>>>> kiatsu_web/main
 
   ],
 
