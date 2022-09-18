@@ -57,7 +57,6 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     // https://go.nuxtjs.dev/vuetify
-    '@nuxtjs/vuetify',
 
   ],
 
