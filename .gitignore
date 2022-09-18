@@ -94,3 +94,5 @@ sw.*
 
 # 証明書系
 *.pem
+
+static/sw.js
