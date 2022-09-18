@@ -2,6 +2,16 @@ import colors from 'vuetify/es5/util/colors'
 import path from 'path'
 import fs from 'fs'
 import VuetifyLoaderPlugin from 'vuetify-loader/lib/plugin'
+import { server } from 'process'
+
+// Build assets on the fly in development mode
+const server = {}
+  if (process.env.NODE_ENV == 'development') {
+    server.https = {
+      key: fs.readFileSync(path.resolve(__dirname, 'localhost-key.pem')),
+      cert: fs.readFileSync(path.resolve(__dirname, 'localhost.pem')),
+    }
+  }
 
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
@@ -99,11 +109,12 @@ export default {
       }
     ]
   },
-
-  server: {
-    https: {
-      key: fs.readFileSync(path.resolve(__dirname, 'localhost-key.pem')),
-      cert: fs.readFileSync(path.resolve(__dirname, 'localhost.pem'))
-    }
-  }
+  
+  // server: {
+  //   https: {
+  //     key: fs.readFileSync(path.resolve(__dirname, 'localhost-key.pem')),
+  //     cert: fs.readFileSync(path.resolve(__dirname, 'localhost.pem'))
+  //   }
+  // }
+  server,
 }
