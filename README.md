@@ -1,5 +1,7 @@
 # kiatsu_web
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3598fab4-0c28-4b83-ab9f-0185f94c7aa5/deploy-status)](https://app.netlify.com/sites/silver-pavlova-ff9c26/deploys)
+
 ## Build Setup
 
 ```bash
