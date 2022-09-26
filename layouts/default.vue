@@ -64,7 +64,8 @@ export default {
       clipped: false,
       drawer: false,
       items: [
-        { icon: ['fas', 'envelope'], title: 'Contact', to: '/contact' }
+        //TODO:一旦無効化
+        // { icon: ['fas', 'envelope'], title: 'Contact', to: '/contact' }
       ],
       title: "KIATSU"
     }
