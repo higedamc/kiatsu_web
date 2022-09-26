@@ -6,8 +6,10 @@
       </div>
       <v-divider class="my-3"></v-divider>
       <div class="title mb-3">課題を解決しない唯一無二のSNS</div>
-      <v-layout justify-center>
-        <!-- <v-btn color="secondary" large to="/profile">ここにApp Storeのリンクを貼る + レイアウト後で調整する</v-btn> -->
+      <v-layout justify-left>
+        <a href ="https://apps.apple.com/us/app/kiatsu/id1570836068">
+          <v-img src="/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" />
+        </a>
       </v-layout>
     </v-flex>
     <v-flex sm6 md6>
